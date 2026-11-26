@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ring Runner 环线飞行 — a chase-view flight game</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #0b1020; height: 100%; }
+  body { display: flex; align-items: center; justify-content: center; min-height: 100vh; }
+  canvas {
+    width: min(100vw, 160vh);
+    height: auto;
+    aspect-ratio: 1280 / 800;
+    display: block;
+    background: #7fb2dd;
+    box-shadow: 0 12px 60px rgba(0, 0, 0, 0.55);
+  }
+</style>
+</head>
+<body>
+<canvas id="game" width="1280" height="800"></canvas>
+<script type="module" src="src/main.js"></script>
+</body>
+</html>
